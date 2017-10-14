@@ -1,0 +1,18 @@
+apply plugin: java
+group = project.property("group")
+version = project.property("version")
+sourceCompatibility = project.property("sourceversion")
+
+dependencies {
+    compile group: 'org.spigotmc', name: 'spigot-api', version: project.property("apiversion")
+    compile group: 'org.spigotmc', name: 'spigot', version: project.property("apiversion")
+
+    // dependencies go here
+    // Example:
+    // compile group: 'com.google.guava', name: 'guava', version: '19.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
